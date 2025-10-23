@@ -77,16 +77,12 @@ public class LimpiarArchivo {
                         System.out.println("Error de E/S: " + e.getMessage());
                     } finally {
                         try {
-                            if (escritor != null) {
-                                escritor.close();
-                            }
+                            escritor.close();
                         } catch (IOException e) {
                             System.out.println("Error al cerrar el escritor: " + e.getMessage());
                         }
                         try {
-                            if (fbr != null) {
-                                fbr.close();
-                            }
+                            fbr.close();
                         } catch (IOException e) {
                             System.out.println("Error al cerrar el lector: " + e.getMessage());
                         }
